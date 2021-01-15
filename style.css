@@ -40,6 +40,8 @@ h1 {
 
 li {
   color: white;
+  font-size: 24px;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 .card {
@@ -63,4 +65,58 @@ img {
 
 .container {
   padding: 2px 16px;
+}
+
+#bylaws {
+  border: black 1px solid;
+  overflow: hidden;
+  max-width: 60%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#bylaws:after {
+  content: '';
+  display: block;
+}
+
+#coding {
+  border: black 1px solid;
+  overflow: hidden;
+  max-width: 60%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#coding:after {
+  content: '';
+  display: block;
+}
+
+#position {
+  border: black 1px solid;
+  overflow: hidden;
+  max-width: 60%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#position:after {
+  content: '';
+  display: block;
+}
+
+#position {
+  border: black 1px solid;
+}
+
+#logo {
+  width:60px;
+  top: 0px;
+  right: 0px;
+  position: absolute;
+}
+
+#topheader {
+  position: relative;
 }
