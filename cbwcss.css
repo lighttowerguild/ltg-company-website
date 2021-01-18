@@ -6,12 +6,10 @@
 
 body {
   background: url(images/LTGbackground.jpg) no-repeat center center fixed;
-  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
 }
 
 #cardbody {
@@ -19,13 +17,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* min-height: 100vh; */
   margin-left: auto;
   margin-right: auto;
 }
 
 h1 {
   font-family: "Potta One", cursive, Arial, sans-serif;
+  text-align: center;
 }
 
 h3 {
@@ -142,4 +140,14 @@ button.primary.ghost {
 .vertical-menu a.active {
   background-color: #4caf50;
   color: white;
+}
+
+#completedcontainer { 
+  display: flex;
+}
+
+@media screen and (max-width: 780px) {
+  div.vertical-menu {
+    width: 100%;
+  }
 }

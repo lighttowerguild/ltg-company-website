@@ -22,10 +22,23 @@ h1 {
   width: 200px;
 }
 
+@media screen and (max-width: 780px) {
+  div.vertical-menu {
+    width: 100%;
+  }
+}
+
 #flexcontainer {
   display: flex;
   flex-direction: row;
   align-items: stretch;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 780px) {
+  div#flexcontainer {
+    flex-direction: column;
+  }
 }
 
 #flexcolumn {
