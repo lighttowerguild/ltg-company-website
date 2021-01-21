@@ -16,50 +16,64 @@ html {
 
 h1 {
   font-family: "Potta One", cursive, Arial, sans-serif;
+  float: left;
 }
 
-.vertical-menu {
+div.vertical-menu {
   width: 200px;
+  margin-top: 2rem;
 }
 
 @media screen and (max-width: 780px) {
   div.vertical-menu {
     width: 100%;
+    margin: 0;
   }
 }
 
-#flexcontainer {
+@media screen and (max-width: 780px) {
+  img#ltglogo {
+    position: relative;
+    margin: 0 auto;
+  }
+}
+
+.flexcontainer {
   display: flex;
   flex-direction: row;
   align-items: stretch;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 780px) {
   div#flexcontainer {
     flex-direction: column;
+    margin-top: 0px;
   }
 }
 
-#flexcolumn {
+.flexcolumns {
   padding-top: 0px !important;
   margin-top: 0px !important;
-  padding-left: 10px;
+  margin-left: 10px;
 }
 
-.vertical-menu a {
+div.vertical-menu a {
   background-color: #eee;
   color: black;
   display: block;
-  padding: 12px;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   text-decoration: none;
 }
 
-.vertical-menu a:hover {
+div.vertical-menu a:hover {
   background-color: #ccc;
 }
 
-.vertical-menu a.active {
+div.vertical-menu a.active {
   background-color: #4caf50;
   color: white;
 }
@@ -79,21 +93,13 @@ li {
   transition: 0.3s;
   border-radius: 5px;
   z-index: 10;
-  margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 20px;
   max-width: 90%;
   color: #fff;
-}
-
-#interncontainer {
   text-align: center;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  max-width: 300px;
   float: left;
 }
 
@@ -234,14 +240,6 @@ img {
   font-weight: bold;
 }
 
-/* Cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-}
-
 button {
   border: none;
   outline: 0;
@@ -251,6 +249,7 @@ button {
   background-color: #000;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 15px;
 }
 
 .title {
